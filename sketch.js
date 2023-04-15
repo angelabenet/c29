@@ -11,7 +11,11 @@ let engine;
 let world;
 
 var ground;
-var fruit,rope;
+var fruit;
+
+// crie a corda
+
+
 var fruit_con;
 
 function setup() 
@@ -22,7 +26,8 @@ function setup()
   world = engine.world;
   ground = new Ground(200,680,600,20);
 
-  rope = new Rope(7,{x:245,y:30});
+// declare objeto 
+  
   fruit = Bodies.circle(300,300,20);
   Matter.Composite.add(rope.body,fruit);
 
